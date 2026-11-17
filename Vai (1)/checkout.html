@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng - BAGS STYLE 2026</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="shop.css">
+    <script src="project.js" defer></script>
+    <script src="shop.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>BAGS STYLE 2026</h1>
+    </header>
+
+    <main class="page-container">
+        <h2 class="page-title">ĐẶT HÀNG</h2>
+
+        <div id="checkout-wrapper" class="checkout-layout">
+            <form id="checkout-form" class="form-card" novalidate>
+                <h2>Thông tin giao hàng</h2>
+
+                <div class="form-group">
+                    <label for="c-name">Họ và tên</label>
+                    <input type="text" id="c-name" placeholder="Name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="c-email">Email nhận đơn hàng</label>
+                        <input type="email" id="c-email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-phone">Số điện thoại</label>
+                        <input type="tel" id="c-phone" placeholder="0901234567" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-address">Địa chỉ giao hàng</label>
+                    <textarea id="c-address" rows="3"
+                        placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố"
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-note">Ghi chú (không bắt buộc)</label>
+                    <textarea id="c-note" rows="2"
+                        placeholder="Ví dụ: giao giờ hành chính"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Phương thức thanh toán</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="payment" value="cod" checked>
+                            Thanh toán khi nhận hàng (COD)</label>
+                        <label><input type="radio" name="payment" value="bank">
+                            Chuyển khoản ngân hàng</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="check-label">
+                        <input type="checkbox" id="c-save" checked>
+                        Lưu thông tin cho lần mua sau
+                    </label>
+                </div>
+
+                <button type="submit" class="nut-chinh">XÁC NHẬN ĐẶT HÀNG</button>
+            </form>
+
+            <aside id="checkout-summary" class="cart-summary"></aside>
+        </div>
+    </main>
+</body>
+</html>

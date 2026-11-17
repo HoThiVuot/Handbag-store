@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý khách hàng - BAGS STYLE 2026</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="shop.css">
+    <script src="project.js" defer></script>
+    <script src="shop.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>BAGS STYLE 2026</h1>
+    </header>
+
+    <main class="page-container">
+        <h2 class="page-title">THÔNG TIN KHÁCH HÀNG</h2>
+
+        <div class="customer-layout">
+            <form id="customer-form" class="form-card" novalidate>
+                <h2>Thông tin cá nhân</h2>
+
+                <div class="form-group">
+                    <label for="c-name">Họ và tên</label>
+                    <input type="text" id="c-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-email">Email</label>
+                    <input type="email" id="c-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-phone">Số điện thoại</label>
+                    <input type="tel" id="c-phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="c-address">Địa chỉ giao hàng</label>
+                    <textarea id="c-address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="nut-chinh">LƯU THÔNG TIN</button>
+                <button type="button" id="delete-customer" class="btn-secondary">
+                    XÓA THÔNG TIN ĐÃ LƯU
+                </button>
+            </form>
+
+            <section class="form-card">
+                <h2>Đơn hàng đã đặt</h2>
+                <div id="order-history"></div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGS STYLE 2026</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <script src="project.js" defer></script>
+    <script src="shop.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>BAGS STYLE 2026</h1>
+      <nav>
+        <a href="menu.html">Trang chủ</a>
+        <a href="admin.html">Quản trị sản phẩm</a>
+      </nav>
+    </header>
+    <div class="main-menu-bar">
+      <div class="menu-bar">
+        <a class="menu-item" data-category="nu" href="sanpham.html">Nữ</a>
+        <a class="menu-item" data-category="nam" href="sanpham.html">Nam</a>
+        <a class="menu-item" data-category="thethao" href="sanpham.html"
+          >Thể Thao</a
+        >
+        <a class="menu-item" data-category="treem" href="sanpham.html"
+          >Trẻ Em</a
+        >
+      </div>
+    </div>
+    <main class="container">
+      <section class="banner">
+        <h2>BỘ SƯU TẬP TÚI XÁCH 2026</h2>
+        <p>Khám phá những mẫu túi xách thời trang và phong cách.</p>
+      </section>
+
+      <section class="store-tools">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm sản phẩm..."
+        />
+
+        <select id="filter-select">
+          <option value="all">Tất cả sản phẩm</option>
+          <option value="badge-new">Sản phẩm mới</option>
+          <option value="badge-sale">Sản phẩm giảm giá</option>
+          <option value="none">Sản phẩm thường</option>
+        </select>
+      </section>
+
+      <p id="result-count"></p>
+
+      <section id="products-list" class="products-list"></section>
+    </main>
+    <section class="cam-ket-dich-vu">
+      <div class="container-phu">
+        <div class="danh-sach-cam-ket">
+          <div class="the-cam-ket">
+            <div class="icon-dich-vu">🚚</div>
+            <h4>Giao Hàng Toàn Quốc</h4>
+            <p>Miễn phí vận chuyển cho đơn hàng trên $50</p>
+          </div>
+          <div class="the-cam-ket">
+            <div class="icon-dich-vu">🛡️</div>
+            <h4>Bảo Hành Da 2 Năm</h4>
+            <p>Cam kết 100% da thật cao cấp</p>
+          </div>
+          <div class="the-cam-ket">
+            <div class="icon-dich-vu">🔄</div>
+            <h4>Đổi Trả Dễ Dàng</h4>
+            <p>Hỗ trợ đổi sản phẩm trong 30 ngày</p>
+          </div>
+          <div class="the-cam-ket">
+            <div class="icon-dich-vu">💬</div>
+            <h4>Hỗ Trợ 24/7</h4>
+            <p>Tư vấn kiểu dáng & phong cách chuyên nghiệp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

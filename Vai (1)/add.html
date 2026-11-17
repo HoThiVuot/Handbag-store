@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm sản phẩm - BAGS STYLE 2026</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>THÊM SẢN PHẨM</h1>
+      <a href="admin.html" class="admin-link">QUAY LẠI QUẢN TRỊ</a>
+    </header>
+
+    <main class="form-container">
+      <form id="add-form">
+        <div class="form-group">
+          <label for="product-name">Tên sản phẩm</label>
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Nhập tên túi"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="product-price">Giá sản phẩm ($)</label>
+          <input
+            type="number"
+            id="product-price"
+            min="0"
+            step="1"
+            placeholder="Nhập giá"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="product-img">Đường dẫn hình ảnh</label>
+          <input
+            type="url"
+            id="product-img"
+            placeholder="https://..."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="product-description">Mô tả sản phẩm</label>
+          <textarea
+            id="product-description"
+            rows="5"
+            placeholder="Nhập mô tả riêng cho sản phẩm..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="product-badge">Nhãn sản phẩm</label>
+          <select id="product-badge">
+            <option value="badge-new">MỚI</option>
+            <option value="badge-sale">GIẢM GIÁ</option>
+            <option value="none">Không có nhãn</option>
+          </select>
+          <div class="form-group">
+            <label for="product-category">Danh mục</label>
+            <select id="product-category">
+              <option value="nu">Nữ</option>
+              <option value="nam">Nam</option>
+              <option value="thethao">Thể Thao</option>
+              <option value="treem">Trẻ Em</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="nut-chinh">THÊM VÀO CỬA HÀNG</button>
+      </form>
+    </main>
+
+    <script src="project.js"></script>
+  </body>
+</html>
